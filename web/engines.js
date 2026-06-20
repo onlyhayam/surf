@@ -61,7 +61,7 @@ const ENGINES = [
     {
     id: "wikipedia",
     name: "Wikipedia",
-    url: "https://www.wikipedia.org/",
+    url: "https://www.wikipedia.org/%s",
     icon: "https://www.google.com/s2/favicons?sz=64&domain=wikipedia.org" 
   }
 ];
