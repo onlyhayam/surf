@@ -1,11 +1,83 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Z-search</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="icon" href="/img/z-search.svg" />
-  </head>
-  <body>
-    <h1>Z-search</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meta Search</title>
+  <link rel="icon" type="image/svg+xml" href="z.svg" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="z.svg" alt="Logo" class="brand__logo" />
+      <span class="brand__name">Surf</span>
+    </div>
+
+    <button id="menuToggle" class="icon-btn" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Backdrop for the side menu; clicking it closes the menu. -->
+  <div id="sideMenuOverlay" class="side-menu__overlay"></div>
+
+  <!-- Slide-in drawer (right to left), currently just holds the default-engine
+       hint, but built so more settings/links can be added later. It's
+       position:fixed so it never affects the page layout. -->
+  <nav id="sideMenu" class="side-menu">
+    <div class="side-menu__section">
+      <h3>Settings</h3>
+      <p class="side-menu__hint">Default engine is used when you press Enter.</p>
+    </div>
+  </nav>
+
+  <main class="main">
+    <section class="default-engine">
+      <span>Default:</span>
+      <button id="defaultEngineBtn" class="default-engine__btn" aria-haspopup="listbox" aria-expanded="false">
+        <span id="defaultEngineLabel">DuckDuckGo</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+
+      <!-- Populated dynamically from ENGINES in engines.js -->
+      <ul id="defaultEngineMenu" class="dropdown-menu" role="listbox" hidden></ul>
+    </section>
+
+    <section class="search-box">
+      <form id="searchForm" autocomplete="off">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-box__input"
+          placeholder="Type your search…"
+          aria-label="Search query"
+        />
+        <button type="submit" class="search-box__submit" aria-label="Search">
+          <img src="z.svg">
+        </button>
+      </form>
+    </section>
+
+    <section class="engine-list" aria-label="Search with a specific engine">
+      <!-- Populated dynamically from ENGINES in engines.js -->
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Pressing Enter or the search icon uses your default engine. Use a button below to search elsewhere.</p>
+  </footer>
+
+  <script src="engines.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
