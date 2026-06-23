@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <header class="topbar">
-    <h1>Feed Viewer</h1>
-    <a class="nav-link" href="control.html">Manage feeds</a>
-  </header> -->
+    <header class="topbar">
+      <div style="display: flex; gap: 8px; align-items: center">
+        <button class="nav-link refresh-btn" id="refreshBtn" type="button">
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9M13.5 2v4h-4" />
+          </svg>
+          Refresh
+        </button>
+      </div>
+    </header>
 
     <div class="container">
       <div class="tabs" id="tabs"></div>

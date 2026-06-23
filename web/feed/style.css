@@ -13,7 +13,6 @@
 
 * {
   box-sizing: border-box;
-  scrollbar-width: thin;
 }
 
 body {
@@ -30,9 +29,8 @@ header.topbar {
   justify-content: space-between;
   gap: 12px;
   padding: 14px 20px;
-  background: var(--bg-elevated);
-  border-bottom: 1px solid var(--border);
   position: sticky;
+
   top: 0;
   z-index: 10;
 }
@@ -173,6 +171,8 @@ header.topbar h1::before {
   line-height: 1.5;
   margin: 0 0 10px;
   display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -181,6 +181,62 @@ header.topbar h1::before {
   font-size: 11px;
   color: var(--text-muted);
   margin-top: auto;
+}
+
+/* ---- skeleton loading cards ---- */
+.skeleton {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.skeleton .sk-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: linear-gradient(90deg, #161b22 25%, #1c2128 37%, #161b22 63%);
+  background-size: 400% 100%;
+  animation: sk-pulse 1.4s ease infinite;
+}
+.skeleton .sk-body {
+  padding: 12px 14px 14px;
+}
+.skeleton .sk-line {
+  height: 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #161b22 25%, #1c2128 37%, #161b22 63%);
+  background-size: 400% 100%;
+  animation: sk-pulse 1.4s ease infinite;
+}
+.skeleton .sk-line.short {
+  width: 60%;
+}
+@keyframes sk-pulse {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.refresh-btn.spinning svg {
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cache-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: -8px 0 16px;
 }
 
 .empty-state,
