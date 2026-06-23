@@ -92,18 +92,10 @@ const PRESET_FEEDS = {
   ],
 
   Literature: [
-    { name: "Literary Hub", url: "https://lithub.com/feed/" },
     {
-      name: "The Paris Review",
+      name: "The Paris Review (Blog)",
       url: "https://www.theparisreview.org/blog/feed/",
     },
-    { name: "London Review of Books", url: "https://www.lrb.co.uk/blog/rss" },
-    { name: "Poetry Foundation", url: "https://www.poetryfoundation.org/rss" },
-    {
-      name: "The New Yorker Books",
-      url: "https://www.newyorker.com/feed/books",
-    },
-    { name: "Book Riot", url: "https://bookriot.com/feed/" },
   ],
 
   Cooking: [
