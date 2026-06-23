@@ -41,6 +41,8 @@ body {
 
 /* ---------------- Top bar ---------------- */
 .topbar {
+  top: 0;
+  z-index: 100;
   position: sticky;
   display: flex;
   align-items: center;
