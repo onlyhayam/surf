@@ -175,8 +175,8 @@ function escapeHTML(str) {
 
 function renderCard(item) {
   const imgHTML = item.image
-    ? `<img class="card-img" src="${escapeHTML(item.image)}" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;card-img placeholder&quot;>📰</div>'">`
-    : `<div class="card-img placeholder">📰</div>`;
+    ? `<img class="card-img" src="${escapeHTML(item.image)}" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;card-img placeholder&quot;>?</div>'">`
+    : `<div class="card-img placeholder">Image is not provided :/</div>`;
   return `
     <div class="card">
       ${imgHTML}
