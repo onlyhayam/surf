@@ -28,7 +28,7 @@ body {
   position: relative;
   margin: 0;
   background: var(--color-bg);
-  background-image: url(z.svg);
+  /* background-image: url(z.svg); */
   background-size: 400px;
   background-position: center 200px;
   background-repeat: no-repeat;
@@ -483,4 +483,14 @@ iframe {
   border: none;
   height: 1000px;
   scrollbar-width: none;
+}
+
+.bg {
+  position: absolute;
+  top: 200px;
+  left: calc(50% - 200px);
+}
+
+.bg svg {
+  color: black;
 }

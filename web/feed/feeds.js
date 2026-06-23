@@ -91,13 +91,6 @@ const PRESET_FEEDS = {
     },
   ],
 
-  Literature: [
-    {
-      name: "The Paris Review (Blog)",
-      url: "https://www.theparisreview.org/blog/feed/",
-    },
-  ],
-
   Cooking: [
     { name: "Serious Eats", url: "https://www.seriouseats.com/rss" },
     { name: "Food52", url: "https://food52.com/blog/feed" },
