@@ -4,6 +4,7 @@
    ---------------------------------------------------------------------- */
 :root {
   color-scheme: dark;
+  --absolute: #000;
   --color-bg: #0d1117;
   --color-bg-secondary: #161b22;
   --color-bg-tertiary: #21262d;
@@ -334,12 +335,14 @@ body {
 }
 
 /* ---------------- Footer ---------------- */
-.footer {
+footer {
+  background-color: var(--color-bg-tertiary);
   text-align: center;
   padding: 14px;
-  font-size: 0.78rem;
+  font-size: 14px;
   color: var(--color-text-muted);
-  border-top: 1px solid var(--color-border);
+  font-weight: bolder;
+  border-top: 3px solid var(--color-border);
 }
 
 /* ---------------- Utility ---------------- */

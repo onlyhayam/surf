@@ -13,40 +13,41 @@
     </header>
 
     <div class="container">
-      <div class="panel">
-        <h2>Add category</h2>
-        <div class="form-row">
-          <input
-            type="text"
-            id="newCategoryName"
-            placeholder="Category name (e.g. Science)"
-          />
-          <button id="addCategoryBtn">Add category</button>
+      <div class="pwrap">
+        <div class="panel">
+          <h2>Add category</h2>
+          <div class="form-row">
+            <input
+              type="text"
+              id="newCategoryName"
+              placeholder="Category name (e.g. Science)"
+            />
+            <button id="addCategoryBtn">Add category</button>
+          </div>
         </div>
-      </div>
-
-      <div class="panel">
-        <h2>Add feed</h2>
-        <div class="form-row">
-          <select id="feedCategorySelect"></select>
-          <input type="text" id="newFeedName" placeholder="Feed name" />
-          <input
-            type="url"
-            id="newFeedUrl"
-            placeholder="https://example.com/rss.xml"
-          />
-          <button id="addFeedBtn">Add feed</button>
+        <div class="panel">
+          <h2>Add feed</h2>
+          <div class="form-row">
+            <select id="feedCategorySelect"></select>
+            <input type="text" id="newFeedName" placeholder="Feed name" />
+            <input
+              type="url"
+              id="newFeedUrl"
+              placeholder="https://example.com/rss.xml"
+            />
+            <button id="addFeedBtn">Add feed</button>
+          </div>
         </div>
-      </div>
 
-      <div id="categoriesList"></div>
+        <div id="categoriesList"></div>
 
-      <div class="panel">
-        <h2>Reset</h2>
-        <div class="form-row">
-          <button class="btn-ghost" id="resetBtn">
-            Restore defaults &amp; clear custom feeds
-          </button>
+        <div class="panel">
+          <h2>Reset</h2>
+          <div class="form-row">
+            <button class="btn-ghost" id="resetBtn">
+              Restore defaults &amp; clear custom feeds
+            </button>
+          </div>
         </div>
       </div>
     </div>

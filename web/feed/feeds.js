@@ -9,7 +9,6 @@ const PRESET_FEEDS = {
     },
     { name: "The Verge", url: "https://www.theverge.com/rss/index.xml" },
     { name: "Wired", url: "https://www.wired.com/feed/rss" },
-    { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
     { name: "BAIR Blog", url: "https://bair.berkeley.edu/blog/feed.xml" },
 
     {
@@ -24,7 +23,6 @@ const PRESET_FEEDS = {
   ],
 
   AI: [
-    { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
     { name: "BAIR Blog", url: "https://bair.berkeley.edu/blog/feed.xml" },
 
     {
@@ -34,61 +32,14 @@ const PRESET_FEEDS = {
   ],
   Finance: [
     // Global finance & markets
-    {
-      name: "Reuters Markets",
-      url: "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
-    },
+
     {
       name: "Bloomberg Markets",
       url: "https://feeds.bloomberg.com/markets/news.rss",
     },
 
-    { name: "Morningstar", url: "https://www.morningstar.com/rss/news.xml" },
-
     // CFO / Executive finance
     { name: "CFO Dive", url: "https://www.cfodive.com/feeds/news/" },
-    { name: "CFO.com", url: "https://www.cfo.com/feed/" },
-    { name: "Treasury & Risk", url: "https://www.treasuryandrisk.com/feed/" },
-    {
-      name: "Harvard Business Review Finance",
-      url: "https://hbr.org/topic/finance/rss",
-    },
-
-    // Accounting & ACCA-level
-    {
-      name: "IFRS Foundation",
-      url: "https://www.ifrs.org/news-and-events/updates/rss/",
-    },
-    {
-      name: "Journal of Accountancy",
-      url: "https://www.journalofaccountancy.com/rss/all-content.html",
-    },
-    { name: "Accounting Today", url: "https://www.accountingtoday.com/feed" },
-    { name: "AICPA News", url: "https://www.aicpa-cima.com/news/rss" },
-
-    // Corporate finance & valuation
-    {
-      name: "Corporate Finance Institute",
-      url: "https://corporatefinanceinstitute.com/resources/feed/",
-    },
-    {
-      name: "Mergers & Inquisitions",
-      url: "https://mergersandinquisitions.com/feed/",
-    },
-
-    // Economics & macro
-    { name: "IMF Blog", url: "https://www.imf.org/en/Blogs/rss" },
-    { name: "World Bank Blogs", url: "https://blogs.worldbank.org/feed" },
-
-    // Personal finance
-    {
-      name: "Mr. Money Mustache",
-      url: "https://www.mrmoneymustache.com/feed/",
-    },
-    {
-      name: "Money Saving Expert",
-      url: "https://www.moneysavingexpert.com/feed/",
-    },
   ],
 
   Cooking: [
@@ -101,21 +52,6 @@ const PRESET_FEEDS = {
       url: "https://www.kingarthurbaking.com/blog/feed",
     },
     { name: "The Kitchn", url: "https://www.thekitchn.com/rss" },
-  ],
-
-  General: [
-    {
-      name: "Reuters World",
-      url: "https://www.reutersagency.com/feed/?best-topics=world&post_type=best",
-    },
-    {
-      name: "Reuters Business",
-      url: "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
-    },
-    {
-      name: "Associated Press",
-      url: "https://feeds.apnews.com/rss/apf-topnews",
-    },
   ],
 };
 
