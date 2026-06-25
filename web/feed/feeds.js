@@ -18,18 +18,6 @@ const PRESET_FEEDS = {
     { name: "Dark Reading", url: "https://www.darkreading.com/rss.xml" },
   ],
 
-  Cybersecurity: [
-    { name: "Dark Reading", url: "https://www.darkreading.com/rss.xml" },
-  ],
-
-  AI: [
-    { name: "BAIR Blog", url: "https://bair.berkeley.edu/blog/feed.xml" },
-
-    {
-      name: "Machine Learning Mastery",
-      url: "https://machinelearningmastery.com/feed/",
-    },
-  ],
   Finance: [
     // Global finance & markets
 
