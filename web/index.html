@@ -7,6 +7,7 @@
     <title>Surf</title>
     <link rel="icon" type="image/svg+xml" href="z.svg" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="manifest" href="manifest.json" />
   </head>
   <body>
     <header class="topbar">
@@ -216,9 +217,14 @@
       <iframe src="/feed/feed.html"></iframe>
     </main>
     <footer>
-      Surf<sup>TM</sup>. &copy; The Surf Community and Contributors. All Rights
+      Surf&trade;. &copy; The Surf Community and Contributors. All Rights
       Reserved.
     </footer>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
     <script src="engines.js"></script>
     <script src="script.js"></script>
     <script src="affiliation.js"></script>

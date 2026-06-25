@@ -498,5 +498,5 @@ iframe {
 }
 
 .bg svg {
-  color: black;
+  color: var(--color-bg-tertiary);
 }
