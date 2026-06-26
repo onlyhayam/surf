@@ -338,12 +338,12 @@ body {
 /* ---------------- Footer ---------------- */
 footer {
   display: flex;
-  background-color: var(--color-bg-tertiary);
+  background-color: var(--color-bg-secondary);
   padding: 14px;
   font-size: 20px;
   color: var(--color-text-muted);
   font-weight: bolder;
-  border-top: 3px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
   justify-content: center;
 }
 
